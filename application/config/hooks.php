@@ -11,3 +11,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |	https://codeigniter.com/user_guide/general/hooks.html
 |
 */
+
+$hook['display_override'][] = array(
+    'class' => 'Widgets',
+    'function' => 'widget_replace',
+    'filename' => 'Widget.php',
+    'filepath' => 'hooks'
+);
